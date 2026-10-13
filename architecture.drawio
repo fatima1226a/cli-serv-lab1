@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Страница-1" id="7TlIwiGCPALbOGJ04uDe">
+    <mxGraphModel dx="666" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-34" parent="1" style="swimlane;startSize=30;horizontal=1;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="1. Клиентский уровень" vertex="1">
+          <mxGeometry height="300" width="220" x="1170" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-35" parent="Bb1uGa4fdH_k1F2BimsQ-34" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" value="Зритель / браузер" vertex="1">
+          <mxGeometry height="50" width="180" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-36" parent="Bb1uGa4fdH_k1F2BimsQ-34" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="React SPA&#xa;Пользовательский интерфейс" vertex="1">
+          <mxGeometry height="60" width="180" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-37" parent="Bb1uGa4fdH_k1F2BimsQ-34" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" value="Контент-менеджер&#xa;(браузер)" vertex="1">
+          <mxGeometry height="50" width="180" x="20" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-38" parent="1" style="swimlane;startSize=30;horizontal=1;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="2. Серверный уровень — NestJS" vertex="1">
+          <mxGeometry height="530" width="390" x="1460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-39" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="Controller&#xa;Обработка HTTP-запросов" vertex="1">
+          <mxGeometry height="50" width="350" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-54" edge="1" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;">
+          <mxGeometry relative="1" x="-0.2091" as="geometry">
+            <Array as="points">
+              <mxPoint x="-10" y="170" />
+              <mxPoint x="-10" y="395" />
+            </Array>
+            <mxPoint x="175" y="170" as="sourcePoint" />
+            <mxPoint x="20" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-55" connectable="0" parent="Bb1uGa4fdH_k1F2BimsQ-54" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Запрос&lt;div&gt;&amp;nbsp;данных&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.4435" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-40" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="Service&#xa;Бизнес-логика" vertex="1">
+          <mxGeometry height="50" width="350" x="20" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-41" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="Auth + Guards&#xa;Авторизация и проверка прав (RBAC)" vertex="1">
+          <mxGeometry height="50" width="350" x="20" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-42" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" value="Модули: Movies · Tracking · Ratings · Recommendations&#xa;Каталог · История · Оценки · Рекомендации" vertex="1">
+          <mxGeometry height="65" width="350" x="20" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-43" parent="Bb1uGa4fdH_k1F2BimsQ-38" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ORM&#xa;Доступ к базе данных" vertex="1">
+          <mxGeometry height="50" width="350" x="20" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-44" parent="1" style="swimlane;startSize=30;horizontal=1;html=1;rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="3. Уровень данных" vertex="1">
+          <mxGeometry height="300" width="250" x="1920" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-45" parent="Bb1uGa4fdH_k1F2BimsQ-44" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffffff;strokeColor=#9673a6;" value="PostgreSQL&#xa;&#xa;Users&#xa;Movies · Genres&#xa;Ratings&#xa;ViewingHistory&#xa;Recommendations" vertex="1">
+          <mxGeometry height="190" width="210" x="20" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="CDN / видеохранилище&#xa;(необязательный компонент)" vertex="1">
+          <mxGeometry height="60" width="250" x="1530" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-47" edge="1" parent="1" source="Bb1uGa4fdH_k1F2BimsQ-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="Bb1uGa4fdH_k1F2BimsQ-36" value="Действия пользователя">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-50" edge="1" parent="1" source="Bb1uGa4fdH_k1F2BimsQ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;startArrow=block;startFill=1;" target="Bb1uGa4fdH_k1F2BimsQ-45" value="SQL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-52" edge="1" parent="1" source="Bb1uGa4fdH_k1F2BimsQ-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Bb1uGa4fdH_k1F2BimsQ-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bb1uGa4fdH_k1F2BimsQ-53" connectable="0" parent="Bb1uGa4fdH_k1F2BimsQ-52" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="HTTPS / REST&amp;nbsp;&lt;div&gt;API / JSON&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1414" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
